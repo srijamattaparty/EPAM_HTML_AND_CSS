@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+body
+{
+	background:#00ffff;
+	padding-top: 25vh;
+	
+}
+form
+{
+	background:#fff;
+}
+.form-container{
+	border-radius: 15px;
+	padding: 25px;
+	box-shadow: 0px 0px 20px 0px;
+}
+
+.button1 {
+  background-color: #4267B2; /* blue */
+  border: none;
+  color: white;
+  padding: 13px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button2 {
+  background-color: #DB4437; /* red */
+  border: none;
+  color: white;
+  padding: 13px 94px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button3 {
+  background-color: #F4B400; /* yellow*/
+  border: none;
+  color: white;
+  padding: 13px 100px;
+  text-align: center;n
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.line
+{
+color: #A9A9A9	
+}

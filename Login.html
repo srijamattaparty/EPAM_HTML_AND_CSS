@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+
+<!------------------------------------------------------------------------------------------------------->
+
+
+<body>
+<section class="container-fluid">
+	<section class="row justify-content-center">
+		<section class="col-12 col-sm-6 col-md-3">
+		<form action="Loginaction" class="needs-validation" method="post" novalidate>
+  		<div class="form-group form-container">
+    		<h4 class="text-center font-weight-bold">Sign in</h4>
+    		
+    		<input type="text" class="form-control" id="uname" placeholder="Enter username" name="username" required>
+    		<div class="invalid-feedback">Please fill out this field.</div>
+			<br>
+  		
+    		<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+    		<div class="invalid-feedback">Please fill out this field.</div><br>
+			
+			<button type="submit" class="btn  btn-primary" text-align="center">Submit</button><br>
+    		New User?
+    		<a href=""><b>Click here to Signup</b></a>
+			
+			
+ 			<br>
+  			
+			<h4 class="text-center" class="line">----------OR----------<h4>
+			<button type="submit" size="200dp" color="blue" class="button1">facebook</button>
+			<p>
+			</p>
+			<button type="submit" color="red" class="button2">Google</button>
+			<p>
+			</p>
+			<button type="submit" color="yellow"class="button3">Epam</button>
+			
+			<br>
+  		</div> 
+		
+		</form>
+<!---------------------------------------------------->
+
+<script>
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    var forms = document.getElementsByClassName('needs-validation');
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+		</section>
+	</section>
+</section>
+</body>
+</html>
